@@ -21,6 +21,7 @@
         vm.loadingAccountInfo = true;
         vm.tabIndex = sessionStorage.getItem("tab");
 
+
         vm.query = {
             limit: 5,
             offset: 1
@@ -28,7 +29,7 @@
 
         function getClient() {
             AccountService.getClientId().then(function (clientId) {
-                vm.clientId = clientId;
+                vm.clientId = clientId
                 getAccounts(clientId);
             });
         }
