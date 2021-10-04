@@ -29,7 +29,7 @@
 
         function getClient() {
             AccountService.getClientId().then(function (clientId) {
-                vm.clientId = clientId
+                vm.clientId = clientId;
                 getAccounts(clientId);
             });
         }
