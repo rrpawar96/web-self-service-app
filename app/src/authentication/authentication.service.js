@@ -60,7 +60,7 @@
             role = '';
             userData = '';
             isAuthenticated = false;
-            setAccessToken('');
+           // setAccessToken('');
             storageService.clear();
             $state.go('login');
         }
